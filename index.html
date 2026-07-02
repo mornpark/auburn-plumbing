@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Auburn Sacramento Plumbing Pros | 24/7 Emergency Plumber in Auburn, Sacramento & Placer County</title>
-<meta name="description" content="Plumbers serving Auburn, Foresthill, Sacramento & Placer County. 24/7 emergency service, drain cleaning, leak repair, water heaters. Upfront pricing — no hidden fees. Call now.">
-<meta name="keywords" content="emergency plumber Auburn, plumber near me Sacramento, drain cleaning Placer County, water heater repair Auburn CA, leak detection Foresthill">
-<link rel="canonical" href="https://auburnsacplumbingpros.com/">
+<title>Big O Plumbing Co. | 24/7 Emergency Plumber in Omaha, Papillion & Sarpy County, NE</title>
+<meta name="description" content="Fast, honest plumbers serving Omaha, Papillion, Bellevue, Elkhorn & Sarpy County. 24/7 emergency service, frozen pipes, drain cleaning, water heaters. Upfront pricing — no hidden fees. Call now.">
+<meta name="keywords" content="emergency plumber Omaha, plumber near me Omaha, drain cleaning Papillion, water heater repair Omaha NE, frozen pipe repair Sarpy County, Bellevue plumber">
+<link rel="canonical" href="https://bigoplumbing.co/">
 <!-- Open Graph -->
-<meta property="og:title" content="Auburn Sacramento Plumbing Pros | 24/7 Emergency Plumber">
-<meta property="og:description" content="Fast, honest plumbing in Auburn, Sacramento & Placer County. Upfront pricing. Available 24/7.">
+<meta property="og:title" content="Big O Plumbing Co. | 24/7 Emergency Plumber in Omaha, NE">
+<meta property="og:description" content="Fast, honest plumbing in Omaha & Sarpy County. Upfront pricing. Available 24/7, even in a Nebraska cold snap.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://auburnsacplumbingpros.com/">
+<meta property="og:url" content="https://bigoplumbing.co/">
 <meta property="og:image" content="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&q=80">
 <meta name="twitter:card" content="summary_large_image">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -35,16 +35,17 @@ tailwind.config = {
 </style>
 
 <!--
-  ============ TWILIO CALL-TRACKING NUMBER ============
+  ============ CALL-TRACKING NUMBER ============
   Swap ONE value below and every phone number + tel: link
   on the page updates automatically.
-  Format: display = human-readable, e164 = tel: link target.
-  ======================================================
+  NOTE: (903) number currently routes to the JDC remodel assistant.
+  Point this at a dedicated Omaha plumbing Vapi number before promoting.
+  ==============================================
 -->
 <script>
   const PHONE = {
-    display: "(903) 626-7055",          // <- Vapi AI dispatcher number (transfers to JP cell)
-    e164: "+19036267055"                // <- E.164 format for tel:/sms: links
+    display: "(402) XXX-XXXX",          // <- Omaha plumbing tracking number (placeholder — needs own Vapi assistant)
+    e164: "+1402XXXXXXX"                // <- E.164 format for tel:/sms: links
   };
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("[data-phone]").forEach(el => el.textContent = PHONE.display);
@@ -58,40 +59,42 @@ tailwind.config = {
 {
   "@context": "https://schema.org",
   "@type": "Plumber",
-  "name": "Auburn Sacramento Plumbing Pros",
+  "name": "Big O Plumbing Co.",
   "image": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1200&q=80",
-  "url": "https://auburnsacplumbingpros.com/",
-  "telephone": "+19036267055",
+  "url": "https://bigoplumbing.co/",
+  "telephone": "+1402XXXXXXX",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "123 Placeholder Way",
-    "addressLocality": "Auburn",
-    "addressRegion": "CA",
-    "postalCode": "95603",
+    "streetAddress": "123 Placeholder St",
+    "addressLocality": "Omaha",
+    "addressRegion": "NE",
+    "postalCode": "68102",
     "addressCountry": "US"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 38.8966, "longitude": -121.0769 },
+  "geo": { "@type": "GeoCoordinates", "latitude": 41.2565, "longitude": -95.9345 },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
     "opens": "00:00", "closes": "23:59"
   },
   "areaServed": [
-    {"@type":"City","name":"Auburn CA"},
-    {"@type":"City","name":"Foresthill CA"},
-    {"@type":"City","name":"Sacramento CA"},
-    {"@type":"AdministrativeArea","name":"Placer County CA"}
+    {"@type":"City","name":"Omaha NE"},
+    {"@type":"City","name":"Papillion NE"},
+    {"@type":"City","name":"Bellevue NE"},
+    {"@type":"City","name":"Elkhorn NE"},
+    {"@type":"AdministrativeArea","name":"Sarpy County NE"},
+    {"@type":"AdministrativeArea","name":"Douglas County NE"}
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Plumbing Services",
     "itemListElement": [
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Emergency Plumbing Repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Frozen & Burst Pipe Repair"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Drain Cleaning & Hydro Jetting"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Leak Detection & Repair"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Water Heater Repair & Installation"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Fixture Installation & Repair"}},
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sewer Line Service"}}
     ]
   }
@@ -102,10 +105,11 @@ tailwind.config = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"Do you offer 24/7 emergency plumbing in Auburn and Sacramento?","acceptedAnswer":{"@type":"Answer","text":"Yes. We answer calls around the clock, every day of the year, across Auburn, Foresthill, Sacramento, and all of Placer County. Burst pipes and sewage backups can't wait for business hours — neither do we."}},
-    {"@type":"Question","name":"How much does a plumber cost in Placer County?","acceptedAnswer":{"@type":"Answer","text":"We quote a flat, upfront price before any work begins — no hourly surprises and no hidden fees. Most drain cleanings and common repairs fall in a predictable range we'll confirm on the phone or on-site before you approve anything."}},
-    {"@type":"Question","name":"How fast can you get to my house?","acceptedAnswer":{"@type":"Answer","text":"For emergencies in Auburn and central Placer County we typically arrive within 60–90 minutes. Sacramento and Foresthill calls are usually same-day. Call and we'll give you an honest arrival window on the spot."}},
-    {"@type":"Question","name":"How do I shut off my water in an emergency?","acceptedAnswer":{"@type":"Answer","text":"Find your main shut-off valve — usually near the water meter at the street, in the garage, or where the main line enters your home — and turn it clockwise until it stops. Then call us. Our free Emergency Shut-Off Guide below walks you through it room by room."}}
+    {"@type":"Question","name":"Do you offer 24/7 emergency plumbing in Omaha?","acceptedAnswer":{"@type":"Answer","text":"Yes. We answer calls around the clock, every day of the year, across Omaha, Papillion, Bellevue, Elkhorn, and all of Sarpy and Douglas County. Burst pipes in a cold snap can't wait for business hours — neither do we."}},
+    {"@type":"Question","name":"How much does a plumber cost in Omaha?","acceptedAnswer":{"@type":"Answer","text":"We quote a flat, upfront price before any work begins — no hourly surprises and no hidden fees. Most drain cleanings and common repairs fall in a predictable range we'll confirm on the phone or on-site before you approve anything."}},
+    {"@type":"Question","name":"My pipes froze — what do I do right now?","acceptedAnswer":{"@type":"Answer","text":"Shut off your main water valve so a frozen pipe doesn't burst and flood the house when it thaws. Open a faucet to relieve pressure, keep the area above freezing, and call us. Never thaw a pipe with an open flame. Our free Winter Emergency Guide below walks you through it."}},
+    {"@type":"Question","name":"How fast can you get to my house?","acceptedAnswer":{"@type":"Answer","text":"For emergencies in Omaha and Sarpy County we typically arrive within 60–90 minutes. We'll give you an honest arrival window the moment you call."}},
+    {"@type":"Question","name":"I smell gas near my water heater — what should I do?","acceptedAnswer":{"@type":"Answer","text":"Leave the house first. From a safe distance, call Metropolitan Utilities District (M.U.D.) at 402-554-7777, then call us. Your safety comes before any repair."}}
   ]
 }
 </script>
@@ -115,26 +119,26 @@ tailwind.config = {
 
 <!-- ============ EMERGENCY TOP BAR ============ -->
 <div class="bg-navy text-white text-sm text-center py-2 px-4">
-  <span class="font-semibold text-fresh">24/7 Emergency Service</span> — Burst pipe? Backed-up drain? Call now:
-  <a data-phone-link href="#" class="underline font-bold"><span data-phone>(903) 626-7055</span></a>
+  <span class="font-semibold text-fresh">24/7 Emergency Service</span> — Burst pipe? Frozen line? Backed-up drain? Call now:
+  <a data-phone-link href="#" class="underline font-bold"><span data-phone>(402) XXX-XXXX</span></a>
 </div>
 
 <!-- ============ HEADER ============ -->
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
   <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-    <a href="#top" class="flex items-center gap-2" aria-label="Auburn Sacramento Plumbing Pros home">
+    <a href="#top" class="flex items-center gap-2" aria-label="Big O Plumbing Co. home">
       <svg class="w-9 h-9 text-aqua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2.7C9 7 6.5 10 6.5 13.5a5.5 5.5 0 0 0 11 0C17.5 10 15 7 12 2.7Z" stroke-linejoin="round"/></svg>
-      <span class="font-extrabold text-navy leading-tight text-lg">Auburn Sacramento<br class="sm:hidden"> <span class="text-aqua">Plumbing Pros</span></span>
+      <span class="font-extrabold text-navy leading-tight text-lg">Big O <span class="text-aqua">Plumbing Co.</span></span>
     </a>
     <nav class="hidden md:flex gap-6 text-sm font-semibold text-slate-600" aria-label="Main navigation">
       <a href="#services" class="hover:text-aqua">Services</a>
       <a href="#why-us" class="hover:text-aqua">Why Us</a>
       <a href="#areas" class="hover:text-aqua">Areas Served</a>
-      <a href="#guide" class="hover:text-aqua">Emergency Guide</a>
+      <a href="#guide" class="hover:text-aqua">Winter Guide</a>
       <a href="#contact" class="hover:text-aqua">Get a Quote</a>
     </nav>
     <a data-phone-link href="#" class="pulse-ring bg-fresh hover:bg-aqua text-white font-bold px-4 py-2.5 rounded-full text-sm transition-colors whitespace-nowrap">
-      📞 <span data-phone>(903) 626-7055</span>
+      📞 <span data-phone>(402) XXX-XXXX</span>
     </a>
   </div>
 </header>
@@ -147,18 +151,18 @@ tailwind.config = {
       Plumbing Problems Don't Wait.<br><span class="text-fresh">Neither Do We.</span>
     </h1>
     <p class="mt-6 text-lg md:text-xl text-slate-200 max-w-2xl">
-      Fast, honest plumbers serving Auburn, Foresthill, Sacramento, and all of Placer County.
-      Upfront flat-rate pricing. No hidden fees. Real humans answer the phone — day or night.
+      Fast, honest plumbers serving Omaha, Papillion, Bellevue, Elkhorn, and all of Sarpy &amp; Douglas County.
+      Upfront flat-rate pricing. No hidden fees. Real humans answer the phone — day or night, even at 20 below.
     </p>
     <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
       <a data-phone-link href="#" class="bg-fresh hover:bg-aqua text-white text-lg font-bold px-8 py-4 rounded-full transition-colors text-center">
-        Call Now: <span data-phone>(903) 626-7055</span>
+        Call Now: <span data-phone>(402) XXX-XXXX</span>
       </a>
       <a href="#contact" class="bg-white/10 hover:bg-white/20 border border-white/40 text-white text-lg font-bold px-8 py-4 rounded-full transition-colors text-center">
         Get an Instant Quote →
       </a>
     </div>
-    <p class="mt-6 text-sm text-slate-300">⭐⭐⭐⭐⭐ Trusted by homeowners across Placer County <!-- swap in real review count when GBP is live --></p>
+    <p class="mt-6 text-sm text-slate-300">⭐⭐⭐⭐⭐ Trusted by homeowners across the Omaha metro <!-- swap in real review count when GBP is live --></p>
   </div>
 </section>
 
@@ -175,23 +179,23 @@ tailwind.config = {
 <!-- ============ SERVICES ============ -->
 <section id="services" class="max-w-6xl mx-auto px-4 py-20">
   <h2 class="text-3xl md:text-4xl font-extrabold text-navy text-center reveal">Plumbing Services Built Around You</h2>
-  <p class="text-center text-slate-500 mt-3 max-w-2xl mx-auto reveal">From a dripping faucet to a flooded crawlspace — one call handles it all, anywhere in Auburn, Sacramento, or Placer County.</p>
+  <p class="text-center text-slate-500 mt-3 max-w-2xl mx-auto reveal">From a dripping faucet to a frozen line in January — one call handles it all, anywhere in the Omaha metro.</p>
   <div class="grid md:grid-cols-3 gap-6 mt-12">
     <!-- card -->
     <div class="reveal bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
       <div class="w-12 h-12 rounded-xl bg-red-50 text-red-500 flex items-center justify-center text-2xl" aria-hidden="true">🚨</div>
       <h3 class="font-bold text-navy text-lg mt-4">Emergency Plumbing</h3>
-      <p class="text-sm text-slate-500 mt-2">Burst pipes, sewage backups, no water. We answer 24/7 and get to Auburn-area emergencies in 60–90 minutes.</p>
+      <p class="text-sm text-slate-500 mt-2">Burst pipes, sewage backups, no water. We answer 24/7 and get to Omaha-area emergencies in 60–90 minutes.</p>
+    </div>
+    <div class="reveal bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
+      <div class="w-12 h-12 rounded-xl bg-blue-50 text-trust flex items-center justify-center text-2xl" aria-hidden="true">❄️</div>
+      <h3 class="font-bold text-navy text-lg mt-4">Frozen &amp; Burst Pipes</h3>
+      <p class="text-sm text-slate-500 mt-2">Nebraska winters are hard on plumbing. We thaw frozen lines safely and repair burst pipes before they flood your home.</p>
     </div>
     <div class="reveal bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
       <div class="w-12 h-12 rounded-xl bg-cyan-50 text-aqua flex items-center justify-center text-2xl" aria-hidden="true">🌀</div>
       <h3 class="font-bold text-navy text-lg mt-4">Drain Cleaning &amp; Hydro Jetting</h3>
       <p class="text-sm text-slate-500 mt-2">Slow drains, recurring clogs, root intrusion. Camera inspection included so you see exactly what we see.</p>
-    </div>
-    <div class="reveal bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
-      <div class="w-12 h-12 rounded-xl bg-blue-50 text-trust flex items-center justify-center text-2xl" aria-hidden="true">💧</div>
-      <h3 class="font-bold text-navy text-lg mt-4">Leak Detection &amp; Repair</h3>
-      <p class="text-sm text-slate-500 mt-2">Mystery water bill? Slab, wall, and underground leak location with minimal-damage repair.</p>
     </div>
     <div class="reveal bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
       <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center text-2xl" aria-hidden="true">🔥</div>
@@ -210,7 +214,7 @@ tailwind.config = {
     </div>
   </div>
   <div class="text-center mt-10 reveal">
-    <a data-phone-link href="#" class="inline-block bg-navy hover:bg-trust text-white font-bold px-8 py-4 rounded-full transition-colors">Describe your problem — we'll quote it: <span data-phone>(903) 626-7055</span></a>
+    <a data-phone-link href="#" class="inline-block bg-navy hover:bg-trust text-white font-bold px-8 py-4 rounded-full transition-colors">Describe your problem — we'll quote it: <span data-phone>(402) XXX-XXXX</span></a>
   </div>
 </section>
 
@@ -222,8 +226,8 @@ tailwind.config = {
       <p class="mt-4 text-slate-300">Anyone can unclog a drain. What you're really hiring is someone you can trust in your home, who shows up when they said they would, and charges what they quoted. That's the whole business model.</p>
       <ul class="mt-8 space-y-5">
         <li class="flex gap-4"><span class="text-fresh text-xl" aria-hidden="true">✔</span><div><strong>The price we quote is the price you pay.</strong><span class="block text-sm text-slate-300">Flat-rate pricing before work starts. Zero surprise line items.</span></div></li>
-        <li class="flex gap-4"><span class="text-fresh text-xl" aria-hidden="true">✔</span><div><strong>Respectful of your home.</strong><span class="block text-sm text-slate-300">Clean workspaces, shoe covers, and honest communication from the first call.</span></div></li>
-        <li class="flex gap-4"><span class="text-fresh text-xl" aria-hidden="true">✔</span><div><strong>Local, not a call center.</strong><span class="block text-sm text-slate-300">Based right here in the foothills. We know Auburn's older homes and Sacramento's slab foundations.</span></div></li>
+        <li class="flex gap-4"><span class="text-fresh text-xl" aria-hidden="true">✔</span><div><strong>Respectful of your home.</strong><span class="block text-sm text-slate-300">Clean workspaces, boot covers, and honest communication from the first call.</span></div></li>
+        <li class="flex gap-4"><span class="text-fresh text-xl" aria-hidden="true">✔</span><div><strong>Local, not a call center.</strong><span class="block text-sm text-slate-300">Based right here in the metro. We know Omaha's older Dundee and Benson homes and the newer builds out in Elkhorn and Gretna.</span></div></li>
         <li class="flex gap-4"><span class="text-fresh text-xl" aria-hidden="true">✔</span><div><strong>Guaranteed workmanship.</strong><span class="block text-sm text-slate-300">If it's not fixed right, we come back and make it right. Period.</span></div></li>
       </ul>
     </div>
@@ -233,50 +237,50 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- ============ EMERGENCY SHUT-OFF GUIDE (linkable resource) ============ -->
+<!-- ============ WINTER EMERGENCY GUIDE (linkable resource) ============ -->
 <section id="guide" class="bg-paper py-20">
   <div class="max-w-4xl mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-navy text-center reveal">Free Homeowner's Emergency Shut-Off Guide</h2>
-    <p class="text-center text-slate-500 mt-3 reveal">The 90 seconds before the plumber arrives matter most. Here's exactly what to do — save this page.</p>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-navy text-center reveal">Free Omaha Homeowner's Winter Emergency Guide</h2>
+    <p class="text-center text-slate-500 mt-3 reveal">The 90 seconds before the plumber arrives matter most — especially in a Nebraska cold snap. Here's exactly what to do. Save this page.</p>
     <div class="mt-10 space-y-4">
       <div class="reveal bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
-        <h3 class="font-bold text-navy">1. Burst pipe or major leak → shut off the main</h3>
-        <p class="text-sm text-slate-600 mt-2">Your main shut-off valve is usually at the water meter near the street, in the garage, or where the main line enters the house. Turn clockwise until it stops. In Auburn's older foothill homes, check the crawlspace entry.</p>
+        <h3 class="font-bold text-navy">1. Frozen pipe → shut the main, then relieve pressure</h3>
+        <p class="text-sm text-slate-600 mt-2">A frozen pipe bursts when it thaws, not when it freezes. Shut your main water valve (often in the basement near the front foundation wall in older Omaha homes), then open a faucet to relieve pressure. Never thaw a pipe with an open flame.</p>
       </div>
       <div class="reveal bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
-        <h3 class="font-bold text-navy">2. Overflowing toilet → shut off at the fixture</h3>
+        <h3 class="font-bold text-navy">2. Burst pipe or major leak → shut off the main</h3>
+        <p class="text-sm text-slate-600 mt-2">Turn the main shut-off clockwise until it stops. In many metro homes the main is in the basement or utility room where the M.U.D. line enters the house.</p>
+      </div>
+      <div class="reveal bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
+        <h3 class="font-bold text-navy">3. Overflowing toilet → shut off at the fixture</h3>
         <p class="text-sm text-slate-600 mt-2">Look behind the toilet for a small oval valve on the wall. Turn clockwise. Same trick works under sinks — every fixture has its own stop valve.</p>
       </div>
       <div class="reveal bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
-        <h3 class="font-bold text-navy">3. Leaking water heater → water AND power</h3>
-        <p class="text-sm text-slate-600 mt-2">Shut the cold-water valve on top of the tank, then kill power at the breaker (electric) or turn the gas dial to OFF. Never drain a hot tank yourself.</p>
-      </div>
-      <div class="reveal bg-white rounded-xl p-6 border border-slate-100 shadow-sm">
-        <h3 class="font-bold text-navy">4. Sewage backup → stop using water entirely</h3>
-        <p class="text-sm text-slate-600 mt-2">Every flush and shower adds to the backup. Stop all water use, keep kids and pets away, and call us — this one's genuinely urgent.</p>
+        <h3 class="font-bold text-navy">4. Gas smell near the water heater → leave, then call M.U.D.</h3>
+        <p class="text-sm text-slate-600 mt-2">Get everyone out of the house first. From a safe distance, call Metropolitan Utilities District at 402-554-7777, then call us. Never drain a hot tank yourself.</p>
       </div>
     </div>
-    <p class="text-center mt-8 text-sm text-slate-500 reveal">Local bloggers, HOAs &amp; community groups: you're welcome to share or link to this guide.</p>
+    <p class="text-center mt-8 text-sm text-slate-500 reveal">Omaha neighborhood groups, HOAs &amp; local bloggers: you're welcome to share or link to this guide.</p>
   </div>
 </section>
 
 <!-- ============ AREAS SERVED ============ -->
 <section id="areas" class="max-w-6xl mx-auto px-4 py-20">
-  <h2 class="text-3xl md:text-4xl font-extrabold text-navy text-center reveal">Proudly Serving the Foothills &amp; Valley</h2>
+  <h2 class="text-3xl md:text-4xl font-extrabold text-navy text-center reveal">Proudly Serving the Omaha Metro</h2>
   <div class="grid md:grid-cols-2 gap-10 mt-10 items-center">
     <div class="reveal">
       <ul class="grid grid-cols-2 gap-3 text-slate-700 font-semibold">
-        <li>📍 Auburn</li><li>📍 Foresthill</li>
-        <li>📍 Sacramento</li><li>📍 Roseville</li>
-        <li>📍 Rocklin</li><li>📍 Lincoln</li>
-        <li>📍 Loomis</li><li>📍 Newcastle</li>
-        <li>📍 Penryn</li><li>📍 Granite Bay</li>
-        <li>📍 Colfax</li><li>📍 Meadow Vista</li>
+        <li>📍 Omaha</li><li>📍 Papillion</li>
+        <li>📍 Bellevue</li><li>📍 Elkhorn</li>
+        <li>📍 La Vista</li><li>📍 Gretna</li>
+        <li>📍 Millard</li><li>📍 Ralston</li>
+        <li>📍 Bennington</li><li>📍 Springfield</li>
+        <li>📍 Douglas County</li><li>📍 Sarpy County</li>
       </ul>
       <p class="mt-6 text-sm text-slate-500">Not sure if we cover you? Call — if we can't get there fast, we'll tell you honestly and point you to someone who can.</p>
     </div>
     <div class="reveal rounded-2xl overflow-hidden shadow-lg border border-slate-100">
-      <iframe title="Service area map: Auburn, Sacramento and Placer County California" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100572.83!2d-121.15!3d38.90!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809b0b6a0e0e0e0f%3A0x0!2sAuburn%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="340" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe title="Service area map: Omaha and Sarpy County Nebraska" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97000!2d-96.05!3d41.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8793888a8b6a0e0f%3A0x0!2sOmaha%2C%20NE!5e0!3m2!1sen!2sus!4v1700000000000" width="100%" height="340" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
@@ -288,18 +292,18 @@ tailwind.config = {
     <div class="grid md:grid-cols-3 gap-6 mt-12">
       <figure class="reveal bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
         <p class="text-yellow-400" aria-label="5 star rating">★★★★★</p>
-        <blockquote class="text-slate-600 text-sm mt-3">"[Placeholder — real review goes here.] Pipe burst on a Sunday night. They picked up on the second ring and were here in under an hour."</blockquote>
-        <figcaption class="mt-4 font-bold text-navy text-sm">— Homeowner, Auburn</figcaption>
+        <blockquote class="text-slate-600 text-sm mt-3">"[Placeholder — real review goes here.] Pipe froze and split on a Sunday night in January. They picked up on the second ring and were here in under an hour."</blockquote>
+        <figcaption class="mt-4 font-bold text-navy text-sm">— Homeowner, Omaha</figcaption>
       </figure>
       <figure class="reveal bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
         <p class="text-yellow-400" aria-label="5 star rating">★★★★★</p>
         <blockquote class="text-slate-600 text-sm mt-3">"[Placeholder — real review goes here.] Quoted a flat price on the phone, charged exactly that. First contractor who's ever done what they said."</blockquote>
-        <figcaption class="mt-4 font-bold text-navy text-sm">— Homeowner, Roseville</figcaption>
+        <figcaption class="mt-4 font-bold text-navy text-sm">— Homeowner, Papillion</figcaption>
       </figure>
       <figure class="reveal bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
         <p class="text-yellow-400" aria-label="5 star rating">★★★★★</p>
-        <blockquote class="text-slate-600 text-sm mt-3">"[Placeholder — real review goes here.] Replaced our water heater same-day and left the garage cleaner than they found it."</blockquote>
-        <figcaption class="mt-4 font-bold text-navy text-sm">— Homeowner, Sacramento</figcaption>
+        <blockquote class="text-slate-600 text-sm mt-3">"[Placeholder — real review goes here.] Replaced our water heater same-day and left the basement cleaner than they found it."</blockquote>
+        <figcaption class="mt-4 font-bold text-navy text-sm">— Homeowner, Bellevue</figcaption>
       </figure>
     </div>
   </div>
@@ -310,16 +314,20 @@ tailwind.config = {
   <h2 class="text-3xl md:text-4xl font-extrabold text-navy text-center reveal">Straight Answers to Common Questions</h2>
   <div class="mt-10 space-y-3">
     <details class="reveal bg-white border border-slate-200 rounded-xl p-5 group">
-      <summary class="font-bold text-navy cursor-pointer list-none flex justify-between items-center">Do you offer 24/7 emergency plumbing in Auburn and Sacramento?<span class="text-aqua group-open:rotate-45 transition-transform text-xl" aria-hidden="true">+</span></summary>
-      <p class="text-sm text-slate-600 mt-3">Yes. We answer around the clock, every day of the year, across Auburn, Foresthill, Sacramento, and all of Placer County.</p>
+      <summary class="font-bold text-navy cursor-pointer list-none flex justify-between items-center">Do you offer 24/7 emergency plumbing in Omaha?<span class="text-aqua group-open:rotate-45 transition-transform text-xl" aria-hidden="true">+</span></summary>
+      <p class="text-sm text-slate-600 mt-3">Yes. We answer around the clock, every day of the year, across Omaha, Papillion, Bellevue, Elkhorn, and all of Sarpy and Douglas County.</p>
     </details>
     <details class="reveal bg-white border border-slate-200 rounded-xl p-5 group">
-      <summary class="font-bold text-navy cursor-pointer list-none flex justify-between items-center">How much does a plumber cost in Placer County?<span class="text-aqua group-open:rotate-45 transition-transform text-xl" aria-hidden="true">+</span></summary>
+      <summary class="font-bold text-navy cursor-pointer list-none flex justify-between items-center">How much does a plumber cost in Omaha?<span class="text-aqua group-open:rotate-45 transition-transform text-xl" aria-hidden="true">+</span></summary>
       <p class="text-sm text-slate-600 mt-3">We quote a flat, upfront price before any work begins — no hourly surprises, no hidden fees. You approve the number before we touch a wrench.</p>
     </details>
     <details class="reveal bg-white border border-slate-200 rounded-xl p-5 group">
+      <summary class="font-bold text-navy cursor-pointer list-none flex justify-between items-center">My pipes froze — what do I do right now?<span class="text-aqua group-open:rotate-45 transition-transform text-xl" aria-hidden="true">+</span></summary>
+      <p class="text-sm text-slate-600 mt-3">Shut off your main water valve so the pipe doesn't burst when it thaws, open a faucet to relieve pressure, keep the space above freezing, and call us. Never use an open flame to thaw a pipe.</p>
+    </details>
+    <details class="reveal bg-white border border-slate-200 rounded-xl p-5 group">
       <summary class="font-bold text-navy cursor-pointer list-none flex justify-between items-center">How fast can you get to my house?<span class="text-aqua group-open:rotate-45 transition-transform text-xl" aria-hidden="true">+</span></summary>
-      <p class="text-sm text-slate-600 mt-3">Emergencies in Auburn and central Placer County: typically 60–90 minutes. Sacramento and Foresthill: usually same-day. We'll give you an honest window when you call.</p>
+      <p class="text-sm text-slate-600 mt-3">Emergencies in Omaha and Sarpy County: typically 60–90 minutes. We'll give you an honest window when you call.</p>
     </details>
   </div>
 </section>
@@ -328,7 +336,7 @@ tailwind.config = {
 <section class="bg-navy text-white py-16">
   <div class="max-w-4xl mx-auto px-4 text-center reveal">
     <h2 class="text-3xl font-extrabold">A Local Crew, Not a Franchise</h2>
-    <p class="mt-4 text-slate-300 max-w-2xl mx-auto">Auburn Sacramento Plumbing Pros was built on one idea: treat every house like it's your mom's. We live here, our kids go to school here, and our reputation is worth more than any single invoice. That's why we quote upfront, show up on time, and stand behind every repair.</p>
+    <p class="mt-4 text-slate-300 max-w-2xl mx-auto">Big O Plumbing Co. was built on one idea: treat every house like it's your mom's. We live here, our kids go to school here, and our reputation is worth more than any single invoice. That's why we quote upfront, show up on time, and stand behind every repair — from a Dundee bungalow to a new build in Gretna.</p>
   </div>
 </section>
 
@@ -339,12 +347,12 @@ tailwind.config = {
       <h2 class="text-3xl md:text-4xl font-extrabold text-navy">Get Your Free Quote</h2>
       <p class="mt-3 text-slate-500">Fastest: call or text. Prefer typing? Use the form and we'll respond within one business hour.</p>
       <div class="mt-8 space-y-4">
-        <a data-phone-link href="#" class="flex items-center gap-3 bg-fresh hover:bg-aqua text-white font-bold px-6 py-4 rounded-xl transition-colors">📞 Call: <span data-phone>(903) 626-7055</span></a>
+        <a data-phone-link href="#" class="flex items-center gap-3 bg-fresh hover:bg-aqua text-white font-bold px-6 py-4 rounded-xl transition-colors">📞 Call: <span data-phone>(402) XXX-XXXX</span></a>
         <a data-sms-link href="#" class="flex items-center gap-3 bg-trust hover:bg-navy text-white font-bold px-6 py-4 rounded-xl transition-colors">💬 Text us a photo of the problem</a>
       </div>
       <div class="mt-8 text-sm text-slate-500">
-        <p><strong class="text-navy">Auburn Sacramento Plumbing Pros</strong></p>
-        <p>123 Placeholder Way, Auburn, CA 95603 <!-- replace with real NAP --></p>
+        <p><strong class="text-navy">Big O Plumbing Co.</strong></p>
+        <p>Serving the Omaha metro — Douglas &amp; Sarpy County, NE <!-- replace with real NAP --></p>
         <p>Open 24 hours, 7 days a week</p>
       </div>
     </div>
@@ -356,11 +364,11 @@ tailwind.config = {
       </div>
       <div>
         <label for="phone" class="text-sm font-bold text-navy">Phone</label>
-        <input id="phone" name="phone" type="tel" required autocomplete="tel" class="mt-1 w-full rounded-lg border-slate-200 border p-3 text-sm" placeholder="(530) 555-0123">
+        <input id="phone" name="phone" type="tel" required autocomplete="tel" class="mt-1 w-full rounded-lg border-slate-200 border p-3 text-sm" placeholder="(402) 555-0123">
       </div>
       <div>
         <label for="city" class="text-sm font-bold text-navy">City</label>
-        <input id="city" name="city" type="text" autocomplete="address-level2" class="mt-1 w-full rounded-lg border-slate-200 border p-3 text-sm" placeholder="Auburn, Sacramento, Foresthill…">
+        <input id="city" name="city" type="text" autocomplete="address-level2" class="mt-1 w-full rounded-lg border-slate-200 border p-3 text-sm" placeholder="Omaha, Papillion, Bellevue…">
       </div>
       <div>
         <label for="issue" class="text-sm font-bold text-navy">What's going on?</label>
@@ -376,20 +384,20 @@ tailwind.config = {
 <footer class="bg-slate-900 text-slate-400 text-sm">
   <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
     <div>
-      <p class="font-extrabold text-white">Auburn Sacramento Plumbing Pros</p>
-      <p class="mt-2">123 Placeholder Way, Auburn, CA 95603</p>
-      <p><a data-phone-link href="#" class="hover:text-white"><span data-phone>(903) 626-7055</span></a> · 24/7</p>
+      <p class="font-extrabold text-white">Big O Plumbing Co.</p>
+      <p class="mt-2">Serving the Omaha metro — Douglas &amp; Sarpy County, NE</p>
+      <p><a data-phone-link href="#" class="hover:text-white"><span data-phone>(402) XXX-XXXX</span></a> · 24/7</p>
     </div>
     <div>
       <p class="font-bold text-white">Services</p>
-      <p class="mt-2 leading-7">Emergency plumbing · Drain cleaning · Leak detection · Water heaters · Fixtures · Sewer lines</p>
+      <p class="mt-2 leading-7">Emergency plumbing · Frozen &amp; burst pipes · Drain cleaning · Leak detection · Water heaters · Sewer lines</p>
     </div>
     <div>
       <p class="font-bold text-white">Areas</p>
-      <p class="mt-2 leading-7">Auburn · Foresthill · Sacramento · Roseville · Rocklin · Lincoln · Placer County</p>
+      <p class="mt-2 leading-7">Omaha · Papillion · Bellevue · Elkhorn · La Vista · Gretna · Millard · Douglas &amp; Sarpy County</p>
     </div>
   </div>
-  <div class="border-t border-slate-800 text-center py-4 text-xs">© <span id="year"></span> Auburn Sacramento Plumbing Pros. All rights reserved.</div>
+  <div class="border-t border-slate-800 text-center py-4 text-xs">© <span id="year"></span> Big O Plumbing Co. All rights reserved.</div>
 </footer>
 
 <!-- ============ SCROLL REVEAL (lightweight, no GSAP needed) ============ -->
